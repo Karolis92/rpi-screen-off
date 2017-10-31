@@ -11,5 +11,7 @@ So to blank the screen on kodi I use this nifty addon: https://github.com/asavah
 * Install xscreensaver by running the command "sudo apt-get install xscreensaver" and configure it to blank the screen
 * install caffeine - "sudo apt-get install caffeine". This prevents screensaver from activating when watching fullscreen video
 * add "hdmi_sleep.sh" file to "/home/pi/scripts/"
-* edit "~/.config/lxsession/LXDE-pi/autostart"and add "@sh /home/pi/scripts/hdmi_sleep.sh" to the end
+* make script executable with "sudo chmod +x hdmi_sleep.sh"
+* execute script and test if no errors are shown with "./hdmi_sleep.sh"
+* if no errors, edit "~/.config/lxsession/LXDE-pi/autostart" and add "@sh /home/pi/scripts/hdmi_sleep.sh" to the end
 * restart
